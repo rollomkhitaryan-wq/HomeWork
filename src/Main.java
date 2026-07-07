@@ -238,8 +238,279 @@ public class Main {
 
         //Ex.39
 
+        if (x<y && x<z &&
+            if (y<z && y<d){
+                if (z<d){
+                    System.out.println(x +" "+ y +" "+ z +" "+ d);
+                }
+            } else if (z<d && z<y) {
+                if (d<y){
+                    System.out.println(x +" "+ z +" "+ d +" "+ y);
+                }
+            }
+        }
 
 
+        //HomeWork.2
+
+        int t = 549;
+
+        int miavor = t % 10;
+        int tasnavor = t /10 % 10;
+        int haryuravor = t / 100;
+
+        // Ex.51
+
+        if (miavor == tasnavor + haryuravor){
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }
+
+        //Ex.52
+
+        if (haryuravor==tasnavor || tasnavor==miavor || miavor==haryuravor){
+            System.out.println("true");
+        }
+        else {
+            System.out.println("false");
+        }
+
+        //Ex.53
+
+        int k = 21;
+
+        if (t>k){
+            System.out.println(t / miavor+tasnavor+haryuravor);
+        }
+        else {
+            System.out.println(miavor+tasnavor+haryuravor / t);
+        }
+
+        //Ex.54
+
+        if (haryuravor>tasnavor && haryuravor>miavor){
+            System.out.println(haryuravor);
+        } else if (tasnavor>haryuravor && tasnavor>miavor) {
+            System.out.println(tasnavor);
+        }
+        else {
+            System.out.println(miavor);
+        }
+
+        //Ex.55
+
+        if (haryuravor<tasnavor && haryuravor<miavor){
+            System.out.println(haryuravor);
+        } else if (tasnavor<haryuravor && tasnavor<miavor) {
+            System.out.println(tasnavor);
+        }
+        else {
+            System.out.println(miavor);
+        }
+
+        //Ex.56
+
+        if (miavor>tasnavor){
+            System.out.println(tasnavor+miavor+haryuravor / t);
+        }
+        else {
+            System.out.println(t);
+        }
+
+        //Ex.57
+
+        if (t>300){
+            System.out.println(tasnavor/miavor);
+        }
+        else {
+            System.out.println(haryuravor/miavor);
+        }
+
+        //Ex.58
+
+
+        char f = 'a';
+
+        if (tasnavor + haryuravor < 5){
+            System.out.println(f);
+        }
+        else {
+            System.out.println("b");
+        }
+
+
+        //Ex.59
+
+        if (tasnavor<=miavor && tasnavor<=haryuravor){
+            if (miavor<=haryuravor){
+                System.out.println(tasnavor + " " + haryuravor +" "+ miavor);
+            }
+            if (haryuravor<=miavor){
+                System.out.println(tasnavor + " " + miavor + " " + haryuravor);
+            }
+        }
+
+        if (miavor<=tasnavor && miavor<=haryuravor){
+            if (tasnavor<=haryuravor){
+                System.out.println(miavor + " " + tasnavor +" "+ haryuravor);
+            }
+            else {
+                System.out.println(miavor + " " + haryuravor + " " + tasnavor);
+            }
+        } else if (tasnavor<=miavor && tasnavor<=haryuravor) {
+            if (miavor<=haryuravor){
+                System.out.println(tasnavor + " " + miavor + " " + haryuravor);
+            }
+            else {
+                System.out.println(tasnavor + " " + haryuravor + " " + miavor);
+            }
+        }
+
+        else if (haryuravor<=miavor && haryuravor<=tasnavor) {
+            if (miavor<=tasnavor){
+                System.out.println(haryuravor + " " + miavor + " " + tasnavor);
+            }
+            else {
+                System.out.println(haryuravor + " " + tasnavor + " " + miavor);
+            }
+        }
+
+        //Ex.60
+
+        if (tasnavor<=miavor && tasnavor<=haryuravor){
+            if (miavor<=haryuravor){
+                System.out.println(tasnavor + " " + haryuravor +" "+ miavor);
+            }
+            if (haryuravor<=miavor){
+                System.out.println(tasnavor + " " + miavor + " " + haryuravor);
+            }
+        }
+
+        if (miavor>=tasnavor && miavor>=haryuravor){
+            if (tasnavor>=haryuravor){
+                System.out.println(miavor + " " + tasnavor +" "+ haryuravor);
+            }
+            else {
+                System.out.println(miavor + " " + haryuravor + " " + tasnavor);
+            }
+        } else if (tasnavor>=miavor && tasnavor>=haryuravor) {
+            if (miavor>=haryuravor){
+                System.out.println(tasnavor + " " + miavor + " " + haryuravor);
+            }
+            else {
+                System.out.println(tasnavor + " " + haryuravor + " " + miavor);
+            }
+        }
+
+        else if (haryuravor>=miavor && haryuravor>=tasnavor) {
+            if (miavor>=tasnavor){
+                System.out.println(haryuravor + " " + miavor + " " + tasnavor);
+            }
+            else {
+                System.out.println(haryuravor + " " + tasnavor + " " + miavor);
+            }
+        }
+
+
+        int v = 1569;
+        int miavor1 = v % 10;
+        int tasnavor1 = v / 10 % 10;
+        int haryuravor1 = v / 100 % 10;
+        int hazaravor = v / 1000;
+
+        //Ex.61
+
+        if (miavor1+tasnavor1 == haryuravor1+hazaravor){
+            System.out.println("true");
+        }
+        else {
+            System.out.println(false);
+        }
+
+        //Ex.62
+
+        if (x<5000){
+            System.out.println(v/(miavor1+haryuravor1));
+        }
+        else {
+            System.out.println(v/(hazaravor+tasnavor1));
+        }
+
+        //Ex.63
+
+        if (miavor1==1 || tasnavor1==1 || haryuravor1==1 || hazaravor==1){
+            System.out.println("1");
+        }
+        else {
+            System.out.println("0");
+        }
+
+        //Ex.64
+
+        if (miavor1+tasnavor1==5){
+            System.out.println("s");
+        }
+        else {
+            System.out.println("d");
+        }
+
+        //Ex.65
+
+        if (miavor1*tasnavor1==12){
+            System.out.println("y=12");
+        }
+        else {
+            System.out.println("y=0");
+        }
+
+        //Ex.66
+
+        if (hazaravor==4 || miavor1==4){
+            System.out.println("YES");
+        }
+        else {
+            System.out.println("NO");
+        }
+
+        //Ex.67
+
+        int g = miavor1+tasnavor1+haryuravor1+hazaravor;
+        if (v==g*g){
+            System.out.println("YES");
+        }
+        else {
+            System.out.println("NO");
+        }
+
+        //Ex.68
+
+        if (miavor1>tasnavor1){
+            System.out.println(miavor1*haryuravor1);
+        }
+        else {
+            System.out.println("1");
+        }
+
+        //Ex.69
+
+        if (g>20){
+            System.out.println("1");
+        }
+        else {
+            System.out.println("0");
+        }
+
+        //Ex.70
+
+        int A = haryuravor1*tasnavor1*miavor1*hazaravor;
+        if (A>200){
+            System.out.println("0");
+        }
+        else {
+            System.out.println("1");
+        }
 
     }
 }
